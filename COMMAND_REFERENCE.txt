@@ -1,0 +1,100 @@
+@echo off
+REM ============================================================
+REM QUICK COMMAND REFERENCE - Stock Prediction App
+REM ============================================================
+
+REM MAIN COMMAND TO RUN THE PROJECT:
+REM ============================================================
+
+cd "c:\Users\dandg\OneDrive\Desktop\BITS Project\Stock-prediction-using-sentiment-analysis-main" ; C:\Users\dandg\AppData\Local\Python\pythoncore-3.14-64\python.exe -m streamlit run app.py
+
+REM Then open your browser and go to:
+REM http://localhost:8501
+
+REM ============================================================
+REM ALTERNATIVE METHODS:
+REM ============================================================
+
+REM Method 1: Double-click run_app.bat (Easiest)
+REM Location: c:\Users\dandg\OneDrive\Desktop\BITS Project\run_app.bat
+
+REM Method 2: Using different port
+REM cd "c:\Users\dandg\OneDrive\Desktop\BITS Project\Stock-prediction-using-sentiment-analysis-main" ; C:\Users\dandg\AppData\Local\Python\pythoncore-3.14-64\python.exe -m streamlit run app.py --server.port=8502
+
+REM Method 3: If Python is in PATH
+REM cd "c:\Users\dandg\OneDrive\Desktop\BITS Project\Stock-prediction-using-sentiment-analysis-main"
+REM python -m streamlit run app.py
+
+REM ============================================================
+REM INSTALLATION COMMANDS:
+REM ============================================================
+
+REM Install all dependencies
+REM C:\Users\dandg\AppData\Local\Python\pythoncore-3.14-64\python.exe -m pip install -r ..\requirements.txt
+
+REM Or upgrade individually
+REM C:\Users\dandg\AppData\Local\Python\pythoncore-3.14-64\python.exe -m pip install --upgrade streamlit yfinance nltk textblob google-news pandas numpy matplotlib xgboost scikit-learn beautifulsoup4 requests
+
+REM ============================================================
+REM VERIFICATION COMMANDS:
+REM ============================================================
+
+REM Check Python version
+REM C:\Users\dandg\AppData\Local\Python\pythoncore-3.14-64\python.exe --version
+
+REM Check syntax
+REM cd "c:\Users\dandg\OneDrive\Desktop\BITS Project\Stock-prediction-using-sentiment-analysis-main"
+REM C:\Users\dandg\AppData\Local\Python\pythoncore-3.14-64\python.exe -m py_compile app.py
+
+REM Check installed packages
+REM C:\Users\dandg\AppData\Local\Python\pythoncore-3.14-64\python.exe -m pip list
+
+REM ============================================================
+REM STOPPING THE APPLICATION:
+REM ============================================================
+
+REM Press Ctrl+C in the terminal window where the app is running
+
+REM ============================================================
+REM FEATURES AVAILABLE:
+REM ============================================================
+
+REM Tab 1: Live Data
+REM - Real-time stock prices from Yahoo Finance
+REM - Shows current price, change %, high/low
+
+REM Tab 2: Historical Data
+REM - Price trends with statistical analysis
+REM - Daily change visualization
+
+REM Tab 3: Sentiment Analysis
+REM - News-based sentiment scoring
+REM - Buy/Sell/Hold recommendations
+
+REM Tab 4: News & Analysis
+REM - Real headlines from Google News API
+REM - Color-coded sentiment indicators
+
+REM Tab 5: Live vs Historical
+REM - Compare live price with historical trends
+REM - Side-by-side visualization
+
+REM ============================================================
+REM SUPPORTED STOCKS:
+REM ============================================================
+
+REM 200+ Indian stocks including:
+REM HDFCBANK, TCS, INFY, RELIANCE, WIPRO, TECHM, AXISBANK, ICICIBANK
+REM MARUTI, BAJAJFINSV, LT, ADANIGREEN, and many more...
+
+REM ============================================================
+REM PORT & ACCESS:
+REM ============================================================
+
+REM Local URL: http://localhost:8501
+REM Network URL: http://192.168.0.104:8501 (or your local IP)
+
+REM Default Port: 8501
+REM Alternative Port: 8502, 8503, etc.
+
+REM ============================================================
