@@ -795,7 +795,7 @@ with tab2:
             
         else:
             st.error(f"No historical data available for {selected_stock}")
-        models = train_model(stock_data)
+        models = train_model({selected_stock: stock_data[selected_stock]})
             
         today_date = dt.today().date()
 
