@@ -555,8 +555,6 @@ def read_stock_data(directory):
     try:
         if os.path.exists(directory):
             files = [f for f in os.listdir(directory) if f.endswith(".csv")]
-            # Limit to first 50 stocks to speed up initial load
-            files = files[:50]
             for filename in files:
                 try:
                     stock_name = os.path.splitext(filename)[0]
